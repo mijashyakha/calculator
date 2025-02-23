@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> SimpleCalculator</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body> 
+    <!-- calculator section starts -->
+    <div class="calculator">
+         
+      <!-- text field for result  -->
+        <input type="text"  id="result" disabled />
+        <!-- button section starts  -->
+      <div class="buttons">
+
+        <!-- frist row of buttons in calculator  -->
+        <button class="correctDigit" onclick="clearDigit()">correct</button>
+        <button class="percent" onclick="setOperator('%')">%</button>
+        <button class="operator" onclick="setOperator('√')">√</button>
+        <button class="operator" onclick="setOperator('/')">&divide;</button>
+
+        <!-- second row of buttons in calculator  -->
+        <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <button class="operator" onclick="setOperator('*')">&times;</button>
+
+        <!-- third row of  button in calculator  -->
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button class="operator" onclick="setOperator('-')">&minus;</button>
+
+        <!-- forth row of button in calculator  -->
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button class="operator plus" onclick="setOperator('+')">&plus;</button>
+
+        <!-- fifth row of  button in calculator  -->
+        <button class="clear" onclick="clearResult()">C</button>
+        <button onclick="appendNumber(0)">0</button>
+        <button onclick="appendNumber('.')">.</button>
+        <button class="equalto" onclick="calculateResult()">=</button>
+
+      </div>
+      <!-- button section ends  -->
+
+    </div>
+    <!-- calculator section ends -->
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+/* default style controlled  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body section starts  */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+/* body section ends  */
+
+/* calculator section starts  */
+.calculator {
+  background-color: rgb(47, 50, 47);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 9px 20px rgb(24, 18, 19);
+  transform: box-shadow 0.3s ease;
+}
+.calculator:hover {
+  box-shadow: 18px 16px 20px rgb(23, 17, 16);
+}
+/* calculator section ends  */
+
+/* input (result displayed) section starts  */
+input {
+  width: 100%;
+  height: 80px;
+  color: black;
+  font-size: 30px;
+  text-align: right;
+  background-color: rgb(188, 187, 187);
+  margin-bottom: 40px;
+}
+/* input (result displayed) section ends  */
+
+/* arranging buttons in grid  */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* button section starts  */
+button {
+  height: 50px;
+  width: 80px;
+  border-radius: 15px;
+  background-color: rgb(225, 224, 224);
+  color: black;
+  font-size: 26px;
+  font-weight: bolder;
+  align-content: center;
+  transition: background-color 0.3s ease font-weight 0.3s ease;
+  cursor: pointer;
+}
+button:hover {
+  background-color: white;
+  font-weight: 1000;
+}
+/* button section ends  */
+
+/* changing color and font size of clear  */
+button.clear {
+  color: rgb(254, 33, 33);
+  font-size: 30px;
+}
+
+/* changing color and font size of correctDigit  */
+button.correctDigit {
+  color: rgb(254, 23, 23);
+  font-size: 16px;
+}
